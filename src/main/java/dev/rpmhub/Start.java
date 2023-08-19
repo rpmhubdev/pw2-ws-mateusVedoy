@@ -35,7 +35,7 @@ public class Start {
 
     @GET
     @Path("/no2kmh/{value}")
-    @Produces(MediaType.TEXT_PLAIN)
+    @Produces(MediaType.APPLICATION_JSON)
     public double convertNo2Kmh(@PathParam("value") double value) {
         if(isZero((value)))
             return value;
